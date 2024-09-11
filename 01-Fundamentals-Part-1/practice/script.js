@@ -59,11 +59,56 @@ const birthYear = 1991;
 // birthYear = 1990;
 // const job;
 
-var job = 'programmer';
-job = 'teacher'
+// var job = 'programmer';
+// job = 'teacher'
 
-lastName = 'Schmedtmann';
-console.log(lastName);
+// lastName = 'Schmedtmann';
+// console.log(lastName);
+
+//Basic operators
+
+// Math operators
+// const now = 2037;
+// const ageJonas = now - 1991;
+
+// const ageSarah = now - 2018
+
+console.log(ageJonas, ageSarah)
+console.log(ageJonas + 2, ageSarah / 10, 2 ** 3)
+
+const firstName = 'Jonas';
+const lastName = 'smithMan';
+console.log(firstName + ' ' + lastName)
 
 
+//  Assignment operators
+let x = 10 + 5;//15
+x += 10; // x = x + 10=25
+console.log(x)
 
+
+x *= 4; // x = x * 4 = 100
+
+
+x++; // x = x + 1 = 101
+
+x--;;  // x = x-1
+x--;;  // x = x-1
+console.log(x)
+
+
+// comparison operarators
+console.log(ageJonas > ageSarah)
+console.log(ageSarah >= 18)
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018)
+
+
+const now = 2037;
+const ageJonas = now - 1991;
+
+const ageSarah = now - 2018
+
+console.log(now - 1991 > now - 2018)
