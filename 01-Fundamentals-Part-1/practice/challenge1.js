@@ -32,9 +32,7 @@ const markMass = 95
 const johnMass = 85
 
 //  BMI's
-
 const markBMI = markMass / markHeight ** 2
-
 const johnBMI = johnMass / johnHeight ** 2
 
 console.log('Mark\'s BMI', markBMI)
@@ -43,8 +41,6 @@ console.log('John\'s BMI', johnBMI)
 
 
 // Information about whether Mark has a higher BMI than John.
-
-
 let markHigherBMI = markBMI > johnBMI
 console.log('Is Mark\'s BMI greater than johnBMI?', markHigherBMI)
 
