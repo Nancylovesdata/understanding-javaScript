@@ -126,29 +126,81 @@ console.log(ageJonas, ageSarah, averageAge);
 
 
 // strings and template literals
-const firstName = 'jonas'
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+// const firstName = 'jonas'
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037;
 
-const jonas = "I'm " + firstName + ', a' + ' ' + (year - birthYear) + 'years old' + job + '!';
+// const jonas = "I'm " + firstName + ', a' + ' ' + (year - birthYear) + 'years old' + job + '!';
 
-console.log(jonas)
+// console.log(jonas)
 
 
 // The template literals/ strings
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(jonasNew)
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(jonasNew)
 
-console.log(`Just a regular string...`);
+// console.log(`Just a regular string...`);
 
 //multi line strings before ES6
-console.log("string with \n\
-multiple \n\
-lines \n\
-it's someway")
+// console.log("string with \n\
+// multiple \n\
+// lines \n\
+// it's someway")
+
+// // 
+// console.log(`string
+// multiple
+// lines`)
 
 // 
-console.log(`string
-multiple
-lines`)
+
+
+// Revision on strings and template literals
+
+// const firstName= 'jonas';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037
+
+// const jonas = "I'm" + ' ' + firstName + ', a' + ' ' + (year - birthYear) + 'years old' + job+ '!'
+// console.log(jonas)
+
+// template strings
+
+// const jonasNew= `I'm ${firstName}, a ${year- birthYear } years old ${job}!`
+// console.log(jonasNew)
+
+// console.log(`I am a child of God
+// multiple
+// hi`)
+
+// console.log('I serve God\n\
+// All I want is to please him \n\
+// I want you to do same \n\
+//     ')
+
+
+
+// Making decisions with if-else statement
+const age = 15 ;
+ 
+
+//If-else-control structure
+
+if (age >= 18 ){
+console.log(`Sarah can start driving license 👍 `)
+}else{
+ const yearsLeft = 18 -age;  
+ console.log(`Sarah is too young. Wait another ${yearsLeft} years`) 
+}
+
+
+const birthYear = 1998;
+let century; 
+if(birthYear <= 2000){
+    century = 20;
+}else{
+    century = 21;
+}
+console.log(century)
