@@ -204,3 +204,39 @@ if(birthYear <= 2000){
     century = 21;
 }
 console.log(century)
+
+
+// Type conversion and coercion
+// Type conversion 
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear )
+console.log(Number(inputYear)+ 18)
+
+
+
+// Converting a value that's impossible to convert.
+console.log(typeof(Number('Nancy')))
+// the above type of returns not a number. This means  since we've converted in string to a number, it's a number oo but it's an invalid number. NAN(Not a number)
+
+console.log(String(23), 23)
+
+
+
+// Type coercion
+console.log ('I am' + ' '+ 23 + ' ' +  'years old')
+// The above code indicate that javascript automatically convert the 23 into string to mingle with the regular stings. It treats it is like when you write it this way '23'
+
+console.log ('23'-'10'-3)
+// This time , javascript converted the strings to numbers. This means the minus operator triggers the opposite conversion.
+
+console.log ('23'+'10'+3)
+// Here with the plus sign, the 3 is rather changed into a string, which concatenates all of them.
+
+console.log ('3'* '2')
+console.log ('23'/'2')
+
+// game
+let n = '1' + 1;
+
+n=n-1
+console.log(n)
