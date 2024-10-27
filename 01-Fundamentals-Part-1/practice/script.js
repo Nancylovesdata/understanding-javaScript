@@ -183,63 +183,63 @@ console.log(ageJonas, ageSarah, averageAge);
 
 
 // Making decisions with if-else statement
-const age = 15 ;
+// const age = 15 ;
  
 
 //If-else-control structure
 
-if (age >= 18 ){
-console.log(`Sarah can start driving license 👍 `)
-}else{
- const yearsLeft = 18 -age;  
- console.log(`Sarah is too young. Wait another ${yearsLeft} years`) 
-}
+// if (age >= 18 ){
+// console.log(`Sarah can start driving license 👍 `)
+// }else{
+//  const yearsLeft = 18 -age;  
+//  console.log(`Sarah is too young. Wait another ${yearsLeft} years`) 
+// }
 
 
-const birthYear = 1998;
-let century; 
-if(birthYear <= 2000){
-    century = 20;
-}else{
-    century = 21;
-}
-console.log(century)
+// const birthYear = 1998;
+// let century; 
+// if(birthYear <= 2000){
+//     century = 20;
+// }else{
+//     century = 21;
+// }
+// console.log(century)
 
 
 // Type conversion and coercion
 // Type conversion 
-const inputYear = '1991';
-console.log(Number(inputYear), inputYear )
-console.log(Number(inputYear)+ 18)
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear )
+// console.log(Number(inputYear)+ 18)
 
 
 
 // Converting a value that's impossible to convert.
-console.log(typeof(Number('Nancy')))
+// console.log(typeof(Number('Nancy')))
 // the above type of returns not a number. This means  since we've converted in string to a number, it's a number oo but it's an invalid number. NAN(Not a number)
 
-console.log(String(23), 23)
+// console.log(String(23), 23)
 
 
 
 // Type coercion
-console.log ('I am' + ' '+ 23 + ' ' +  'years old')
+// console.log ('I am' + ' '+ 23 + ' ' +  'years old')
 // The above code indicate that javascript automatically convert the 23 into string to mingle with the regular stings. It treats it is like when you write it this way '23'
 
-console.log ('23'-'10'-3)
+// console.log ('23'-'10'-3)
 // This time , javascript converted the strings to numbers. This means the minus operator triggers the opposite conversion.
 
-console.log ('23'+'10'+3)
+// console.log ('23'+'10'+3)
 // Here with the plus sign, the 3 is rather changed into a string, which concatenates all of them.
 
-console.log ('3'* '2')
-console.log ('23'/'2')
+// console.log ('3'* '2')
+// console.log ('23'/'2')
 
 // game
-let n = '1' + 1;
+// let n = '1' + 1;
 
-n=n-1
-console.log(n)
+// n=n-1
+// console.log(n)
 
 
 // 5 falsy values: 0, '', undefined, null, Nan
@@ -251,19 +251,61 @@ console.log(n)
 
 
 
-const money = 0;
+// const money = 0;
 // In the if statement, where money = 0, javascript convert the money = 0 into a boolean, which is false. So when the code is running and reaches the first block of code, it skips "Don't spend it all" since money is false, and runs the next block of code.
-if (money){ 
-    console.log("Don't spend it all");
+// if (money){ 
+//     console.log("Don't spend it all");
+// }else{
+//     console.log('You should get a job!');
+// }
+
+
+
+// let height;
+// if(height){
+//     console.log('Yay! height is defined')
+// }else{
+//     console.log ('Height is undefined')
+// }
+
+
+
+
+// Equality operators == vs===
+
+const age = '18';
+if (age ===18) console.log('You just became an adult: D (strict)');
+
+// characteristics of the three equaltos
+//1. 18===18, will return true(Javascript convert it into a boolen to return true or false. If age become 19, it will be 19 ===18, which will return a false vaue,)
+
+//  This === is called a strict equality. It strict becaus it does not perform type coercion.  
+
+// The loose equality operator(==)
+// The double equalto does type coercion
+
+'18'==18 //performs type coercion, since it changes the string into a number
+'18'===18 // Does not perform type coercion
+
+
+
+if (age ==18) console.log('You just became an adult: D (loose)');
+
+
+const favourite=Number(prompt("What's your favourite number?"));
+console.log(favourite)
+console.log(typeof(favourite))
+
+if (favourite===8){
+    console.log('cool! 8 is an amazing number')
+}else if(favourite===7){
+    console.log('7 is also a cool number')
+}else if(favourite===10){
+    console.log('10 is also a cool number')
 }else{
-    console.log('You should get a job!');
+   console.log('Number is not 23 or 7') 
 }
 
 
+if (favourite!==8) console.log('why not the 8!')
 
-let height;
-if(height){
-    console.log('Yay! height is defined')
-}else{
-    console.log ('Height is undefined')
-}
