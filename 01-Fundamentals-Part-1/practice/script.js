@@ -273,8 +273,8 @@ console.log(ageJonas, ageSarah, averageAge);
 
 // Equality operators == vs===
 
-const age = '18';
-if (age ===18) console.log('You just became an adult: D (strict)');
+// const age = '18';
+// if (age ===18) console.log('You just became an adult: D (strict)');
 
 // characteristics of the three equaltos
 //1. 18===18, will return true(Javascript convert it into a boolen to return true or false. If age become 19, it will be 19 ===18, which will return a false vaue,)
@@ -284,6 +284,8 @@ if (age ===18) console.log('You just became an adult: D (strict)');
 // The loose equality operator(==)
 // The double equalto does type coercion
 
+
+/*
 '18'==18 //performs type coercion, since it changes the string into a number
 '18'===18 // Does not perform type coercion
 
@@ -309,3 +311,20 @@ if (favourite===8){
 
 if (favourite!==8) console.log('why not the 8!')
 
+*/
+
+
+
+    // Boolean logic: The And , or & Not operators
+    // Boolean variables
+    // ;Eg, age = 16;
+    // A: Age is greater or equal 20. // ans : false
+    // B: Age is less than 30  // ans : true
+
+
+ //  Let's use operators!
+// ! A  // true
+// A and B  // false
+// A OR B   // true
+// ! A and  // true
+// A OR !B  // false
