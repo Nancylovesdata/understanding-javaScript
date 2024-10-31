@@ -328,3 +328,39 @@ if (favourite!==8) console.log('why not the 8!')
 // A OR B   // true
 // ! A and  // true
 // A OR !B  // false
+
+
+// Logical operator 
+const hasDriversLicense = true; //A
+const hasGoodVision = true;  //B
+
+
+// With the && operator, one false is enough to make all of them false.
+console.log(hasDriversLicense && hasGoodVision);
+
+// With the or operator, one truth is enough to make all of them true.
+console.log(hasDriversLicense  ||hasGoodVision);
+
+console.log(!hasDriversLicense);
+
+
+// Using these variables to take a decision
+// We want determine whether Sarah should drive or not.
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if(hasDriversLicense && hasGoodVision ){
+//     console.log("Sarah is able to drive")
+// }else{
+//     console.log("Someone else should drive...")
+// }
+
+const isTired = false; //
+console.log(hasDriversLicense  &&  hasGoodVision && isTired);
+
+
+if(hasDriversLicense && hasGoodVision && !isTired ){
+    console.log("Sarah is able to drive")
+}else{
+    console.log("Someone else should drive...")
+}
