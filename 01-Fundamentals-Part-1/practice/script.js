@@ -1,4 +1,3 @@
-
 // Values and Variables
 // console.log("Jonas");
 // console.log(23);
@@ -24,16 +23,13 @@
 
 // console.log(myFirstJob);
 
-
 //Data types
 // let javascriptIsFun = true
 // console.log(javascriptIsFun)
 
-
 // console.log(typeof javascriptIsFun)
 // console.log(typeof "Jonas")
 // console.log(typeof 23)
-
 
 // javascriptIsFun = 'YES';
 // console.log(typeof javascriptIsFun)
@@ -45,10 +41,8 @@
 // year = 1998
 // console.log(typeof year)
 
-
 // let kojo = null;
 // console.log(typeof kojo)
-
 
 ////////////////////////////////////
 // let, const and var
@@ -79,7 +73,6 @@
 // const firstName = 'Jonas';
 // const lastName = 'smithMan';
 // console.log(firstName + ' ' + lastName)
-
 
 //  Assignment operators
 // let x = 10 + 5;//15
@@ -124,7 +117,6 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
-
 // strings and template literals
 // const firstName = 'jonas'
 // const job = 'teacher';
@@ -134,7 +126,6 @@ console.log(ageJonas, ageSarah, averageAge);
 // const jonas = "I'm " + firstName + ', a' + ' ' + (year - birthYear) + 'years old' + job + '!';
 
 // console.log(jonas)
-
 
 // The template literals/ strings
 // const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
@@ -148,13 +139,12 @@ console.log(ageJonas, ageSarah, averageAge);
 // lines \n\
 // it's someway")
 
-// // 
+// //
 // console.log(`string
 // multiple
 // lines`)
 
-// 
-
+//
 
 // Revision on strings and template literals
 
@@ -180,24 +170,20 @@ console.log(ageJonas, ageSarah, averageAge);
 // I want you to do same \n\
 //     ')
 
-
-
 // Making decisions with if-else statement
 // const age = 15 ;
- 
 
 //If-else-control structure
 
 // if (age >= 18 ){
 // console.log(`Sarah can start driving license 👍 `)
 // }else{
-//  const yearsLeft = 18 -age;  
-//  console.log(`Sarah is too young. Wait another ${yearsLeft} years`) 
+//  const yearsLeft = 18 -age;
+//  console.log(`Sarah is too young. Wait another ${yearsLeft} years`)
 // }
 
-
 // const birthYear = 1998;
-// let century; 
+// let century;
 // if(birthYear <= 2000){
 //     century = 20;
 // }else{
@@ -205,22 +191,17 @@ console.log(ageJonas, ageSarah, averageAge);
 // }
 // console.log(century)
 
-
 // Type conversion and coercion
-// Type conversion 
+// Type conversion
 // const inputYear = '1991';
 // console.log(Number(inputYear), inputYear )
 // console.log(Number(inputYear)+ 18)
-
-
 
 // Converting a value that's impossible to convert.
 // console.log(typeof(Number('Nancy')))
 // the above type of returns not a number. This means  since we've converted in string to a number, it's a number oo but it's an invalid number. NAN(Not a number)
 
 // console.log(String(23), 23)
-
-
 
 // Type coercion
 // console.log ('I am' + ' '+ 23 + ' ' +  'years old')
@@ -241,7 +222,6 @@ console.log(ageJonas, ageSarah, averageAge);
 // n=n-1
 // console.log(n)
 
-
 // 5 falsy values: 0, '', undefined, null, Nan
 // console.log (Boolean(0));
 // console.log (Boolean(undefined));
@@ -249,17 +229,13 @@ console.log(ageJonas, ageSarah, averageAge);
 // console.log (Boolean({}));
 // console.log (Boolean(''));
 
-
-
 // const money = 0;
 // In the if statement, where money = 0, javascript convert the money = 0 into a boolean, which is false. So when the code is running and reaches the first block of code, it skips "Don't spend it all" since money is false, and runs the next block of code.
-// if (money){ 
+// if (money){
 //     console.log("Don't spend it all");
 // }else{
 //     console.log('You should get a job!');
 // }
-
-
 
 // let height;
 // if(height){
@@ -267,9 +243,6 @@ console.log(ageJonas, ageSarah, averageAge);
 // }else{
 //     console.log ('Height is undefined')
 // }
-
-
-
 
 // Equality operators == vs===
 
@@ -279,11 +252,10 @@ console.log(ageJonas, ageSarah, averageAge);
 // characteristics of the three equaltos
 //1. 18===18, will return true(Javascript convert it into a boolen to return true or false. If age become 19, it will be 19 ===18, which will return a false vaue,)
 
-//  This === is called a strict equality. It strict becaus it does not perform type coercion.  
+//  This === is called a strict equality. It strict becaus it does not perform type coercion.
 
 // The loose equality operator(==)
 // The double equalto does type coercion
-
 
 /*
 '18'==18 //performs type coercion, since it changes the string into a number
@@ -313,36 +285,30 @@ if (favourite!==8) console.log('why not the 8!')
 
 */
 
+// Boolean logic: The And , or & Not operators
+// Boolean variables
+// ;Eg, age = 16;
+// A: Age is greater or equal 20. // ans : false
+// B: Age is less than 30  // ans : true
 
-
-    // Boolean logic: The And , or & Not operators
-    // Boolean variables
-    // ;Eg, age = 16;
-    // A: Age is greater or equal 20. // ans : false
-    // B: Age is less than 30  // ans : true
-
-
- //  Let's use operators!
+//  Let's use operators!
 // ! A  // true
 // A and B  // false
 // A OR B   // true
 // ! A and  // true
 // A OR !B  // false
 
-
-// Logical operator 
+// Logical operator
 const hasDriversLicense = true; //A
-const hasGoodVision = true;  //B
-
+const hasGoodVision = true; //B
 
 // With the && operator, one false is enough to make all of them false.
 console.log(hasDriversLicense && hasGoodVision);
 
 // With the or operator, one truth is enough to make all of them true.
-console.log(hasDriversLicense  ||hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
 
 console.log(!hasDriversLicense);
-
 
 // Using these variables to take a decision
 // We want determine whether Sarah should drive or not.
@@ -356,11 +322,51 @@ console.log(!hasDriversLicense);
 // }
 
 const isTired = false; //
-console.log(hasDriversLicense  &&  hasGoodVision && isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
 
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive...");
+}
 
-if(hasDriversLicense && hasGoodVision && !isTired ){
-    console.log("Sarah is able to drive")
-}else{
-    console.log("Someone else should drive...")
+// The switch statement( another way of writing complicated if-else )
+const day = "monday";
+
+switch (day) {
+  case "monday": // day == 'monday'
+    console.log("Plan my course structure");
+    console.log("Go to coding meeting");
+  // break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend: D");
+    break;
+  default:
+    console.log("Not a valid day!");
+}
+
+if (day == "monday") {
+  console.log("Plan my course structure");
+  console.log("Go to coding meeting");
+} else if (day == "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day == "wednesday" || day == "thursay") {
+  console.log("Write code examples");
+} else if (day == "friday") {
+  console.log("Record videos");
+} else if (day == "saturday" || day == "sunday") {
+  console.log("Enjoy the weekend: D");
+} else {
+  console.log("Not a valid day!");
 }
