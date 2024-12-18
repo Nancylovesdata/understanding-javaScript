@@ -370,3 +370,19 @@ if (day == "monday") {
 } else {
   console.log("Not a valid day!");
 }
+
+// expressions produce values,
+
+//  statements are like full sentences
+
+// that translate our actions.
+
+// Eg of expressions
+3 + 4;
+
+//eg of statements(it needs an action to be complete, it does not produce a value)
+if (23 > 10) {
+  const str = " 23 is bigger";
+}
+
+
