@@ -72,3 +72,21 @@ console.log(fruitProcessor(4, 6));
 
 const appleOrangeJuice = fruitProcessor(98, 100);
 console.log(appleOrangeJuice);
+
+// FUNCTION DECLARATION
+// a function to calc age based on a given birthyear
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+function calcAge1(birthYeah) {
+  return 2037 - birthYeah;
+}
+
+// FUNCTION EXPRESSION
+const calcAge2 = function (birthYeah) {
+  return 2037 - birthYeah;
+};
+
+const age2 = calcAge2(1991);
+console.log(age2);
