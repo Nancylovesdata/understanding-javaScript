@@ -76,17 +76,44 @@ console.log(appleOrangeJuice);
 // FUNCTION DECLARATION
 // a function to calc age based on a given birthyear
 
-const age1 = calcAge1(1991);
-console.log(age1);
+// const age1 = calcAge1(1991);
+// console.log(age1);
 
-function calcAge1(birthYeah) {
-  return 2037 - birthYeah;
-}
+// function calcAge1(birthYeah) {
+//   return 2037 - birthYeah;
+// }
 
-// FUNCTION EXPRESSION
-const calcAge2 = function (birthYeah) {
-  return 2037 - birthYeah;
+// // FUNCTION EXPRESSION
+// const calcAge2 = function (birthYeah) {
+//   return 2037 - birthYeah;
+// };
+
+// const age2 = calcAge2(1991);
+// console.log(age2);
+
+// ARROW FUNCTION: Is a special form of function expression that is shorter and faster to write
+
+// arrow fxn
+const calcAge3 = (birthYeah) => 2037 - birthYeah;
+const age3 = calcAge3(1995);
+console.log(age3);
+
+// one parameter and more than one line of code, we need a return keyword.
+// const yearsUntilRetireMent = (birthYeah) => {
+//   const age = 2037 - birthYeah;
+//   const retirement = 65 - age;
+//   return retirement;
+// };
+
+// console.log(yearsUntilRetireMent(1991));
+
+// when you have more than one parameter
+const yearsUntilRetireMent = (birthYeah, firstName) => {
+  const age = 2037 - birthYeah;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years`;
 };
 
-const age2 = calcAge2(1991);
-console.log(age2);
+console.log(yearsUntilRetireMent(1991, "Nancy"));
+
+console.log(yearsUntilRetireMent(1980, "bob"));
