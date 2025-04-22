@@ -141,3 +141,23 @@ console.log(friends.includes("Bob"));
 if (friends.includes("Steven")) {
   console.log("You have a friend called Peter");
 }
+
+// Introduction to Objects
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+// So just like arrays, object is use to group variables that really belong together, with object order does not matter when you want to retrieve them. So arrays are for structured data whilst objects are unstructured data. For objject you give it a name and u retrieve it by the name. In all the property name is what matters.
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+
+console.log(jonas);
