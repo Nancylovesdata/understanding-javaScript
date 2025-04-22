@@ -43,30 +43,30 @@
 // . Arrow function is a quick one line fxn . Has no keyword, has no return, parameter comes right after the equal to.
 
 // ARRAYS (DATA STRUCTURES)
-const friend1 = "Michael";
-const friend2 = "Steven";
-const friend3 = "Peter";
+// const friend1 = "Michael";
+// const friend2 = "Steven";
+// const friend3 = "Peter";
 // storing multiple items into a big container so later we can reference them.
 
-const friends = ["Michael", "Steven", "Peter"];
-console.log(friends);
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
 
 // Another way of writting an array
-const y = new Array(1991, 2002, 1998);
+// const y = new Array(1991, 2002, 1998);
 
 // Now lets pick what we need and show
-console.log(friends[0]);
-console.log(friends[2]);
-console.log(friends[1]);
+// console.log(friends[0]);
+// console.log(friends[2]);
+// console.log(friends[1]);
 
 // finding the number of elements in the array
-console.log(friends.length);
+// console.log(friends.length);
 
 // finding the last element in the array
-console.log(friends[friends.length - 1]);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = "Jay";
-console.log(friends);
+// friends[2] = "Jay";
+// console.log(friends);
 
 // why were able  to change a variable declared with a const
 // Reason: Only primitive values(string, boolean, bigInt, null, undefined, symbol) are immutable but array is not a primitive value so u can mutate(change or reassign)it.
@@ -76,10 +76,10 @@ console.log(friends);
 
 // An array can hold values of different data types
 
-const firstName = "Jonas";
-const jonas = [firstName, "Freeman", 2025 - 1998, "teacher", friends];
-console.log(jonas);
-console.log(jonas.length);
+// const firstName = "Jonas";
+// const jonas = [firstName, "Freeman", 2025 - 1998, "teacher", friends];
+// console.log(jonas);
+// console.log(jonas.length);
 
 // Exercise
 const calcAge = function (birthYeah) {
@@ -102,3 +102,42 @@ const ages = [
 ];
 
 console.log(ages);
+
+// Basic Array Methods/ Operators
+
+// Add elements to the last member
+const friends = ["Michael", "Steven", "Peter"];
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+// Adds element to the first member
+friends.unshift("Jesus");
+console.log(friends);
+
+// Remove elements
+console.log(friends);
+
+friends.pop(); // Last element
+const popped = friends.pop();
+console.log(popped);
+
+// Removes first element
+const shifted = friends.shift();
+console.log(shifted);
+
+// Tells us in which position is the array(learnt that this is case sensitive)
+// the first console will not work, it willreturn-1 becasue it doesnt exist
+console.log(friends.indexOf("steven"));
+console.log(friends.indexOf("Steven"));
+
+friends.push(23);
+console.log(friends.includes(23));
+
+// return true or false if the element is in the array or not
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+
+if (friends.includes("Steven")) {
+  console.log("You have a friend called Peter");
+}
