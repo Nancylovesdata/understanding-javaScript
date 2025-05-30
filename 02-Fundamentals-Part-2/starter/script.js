@@ -112,7 +112,7 @@ console.log(friends);
 console.log(newLength);
 
 // Adds element to the first member
-friends.unshift("Jesus");
+friends.unshift("Michael");
 console.log(friends);
 
 // Remove elements
@@ -152,12 +152,146 @@ const jonasArray = [
 ];
 
 // So just like arrays, object is use to group variables that really belong together, with object order does not matter when you want to retrieve them. So arrays are for structured data whilst objects are unstructured data. For objject you give it a name and u retrieve it by the name. In all the property name is what matters.
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+
+// console.log(jonas);
+
+// Dots And Bracket Notations
+//  How to get property from an obect
+// 1st wa: The dot notation
+
+// console.log(jonas.lastName);
+
+// bracket
+// console.log(jonas["lastName"]);
+
+// Another way of retrieving Jonas name, lastmame or first name
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
+
+// But the above wont work for tje dot notatiion.
+
+// So when do we use each
+
+// const interestenIn = prompt(
+//   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+// );
+// this will be undefined because you are trying to access a property name on object that doesnt exist.
+// console.log(jonas.interestenIn);
+// but this will work because interestenIn is a variable whose value is 'job', so it effectively becomes jonas['job'].
+
+// if (jonas[interestenIn]) {
+//   console.log(jonas[interestenIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose between firstName, lastName, age, job, and friends"
+//   );
+// }
+
+// jonas.location = "Portugal";
+// jonas["twitter"] = "@nancy";
+// jonas.girlFriend = "akose";
+// // jonas[newFriend] = "gemini";
+// console.log(jonas);
+
+// if (jonas[interestenIn]) {
+//   console.log(jonas[interestenIn]);
+// } else {
+//   console.log(
+//     "Wrong request! What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+//   );
+// }
+
+// How to use the dot and bracket notation to add property names to an object.
+// jonas.location = "Dansoman";
+// jonas["twitter"] = "@nancydata";
+// jonas.wife = "alisa";
+// // jonas.bestFriend = "Michael";
+// console.log(jonas);
+
+// write a sentence " Jonas has 3 friends,and his best friend is called Michael"
+
+// MY ANSWER
+// if (jonas[interestenIn]) {
+//   console.log("Jonas has 3 friends,and his best friend is called Michael");
+// } else {
+//   console.log("Wrong! You dont know Jonas very well");
+// }
+
+// SOLUTION
+// console.log(
+//   `${jonas.firstName} has ${jonas.friends.length}, and his bestfriend is called ${jonas.friends[0]} `
+// );
+
+// OBJECT METHODS
+// Remember function is another type of value, that means we can create key value pair in which the value is a function.And that then means that we can in fact,add functions to objects.
+
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
-  age: 2037 - 1991,
+  birthYeah: 1991,
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: false,
+
+  // calcAge: function (birthYeah) {
+  //   return 2037 - birthYeah;
+  // },
+
+  // calcAge: function () {
+  //   // this is the objectthe method belongs to.
+  //   console.log(this);
+  //   return 2037 - this.birthYeah;
+  // },
+
+  calcAge: function () {
+    // this is the objectthe method belongs to.
+    // we can also use to store a new property in an object.
+    this.age = 2037 - this.birthYeah;
+
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} year old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
 };
 
-console.log(jonas);
+// Any function that is attached to a an object is called a method.
+
+// Also note that you cannot use function declaration , function declaration is what is below.
+// function calcAge() {
+//   return 2037 - birthYeah;
+// }
+
+// It takes function expression to place a function in  an object. A function expression is:
+// const calcAge = function (biirt) {
+//   return 2037 - birthYeah;
+// };
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// console.log(jonas["calcAge"](1991));
+
+// Exercise
+// Write a method called getSummary, and this method should return a string that will summarize the data about jonas.
+
+// Eg : "Jonas is a 46- year old teacher, and he has a drivers license.  "
+
+console.log(jonas.getSummary());
+
+// Now in conclusion, when we analyse arrays from the example below, we can say arrays too  are objects, special kinds of objects, because like this, it uses a built in function(method). And the friends, is object.
+friends.pop();
