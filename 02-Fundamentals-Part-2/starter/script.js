@@ -295,3 +295,48 @@ console.log(jonas.getSummary());
 
 // Now in conclusion, when we analyse arrays from the example below, we can say arrays too  are objects, special kinds of objects, because like this, it uses a built in function(method). And the friends, is object.
 friends.pop();
+
+// ITERARATION
+// If else are controlled structures.
+// Another controlled structures is called loop
+// Loops help us to automatate repetitive task (task that we have to do over and over again.)
+
+// console.log("Lifting weights repitition 1 🤺");
+// console.log("Lifting weights repitition 2 🤺");
+// console.log("Lifting weights repitition 3 🤺");
+// console.log("Lifting weights repitition 4 🤺");
+// console.log("Lifting weights repitition 5 🤺");
+// console.log("Lifting weights repitition 6 🤺");
+// console.log("Lifting weights repitition 7 🤺");
+// console.log("Lifting weights repitition 8 🤺");
+// console.log("Lifting weights repitition 9 🤺");
+// console.log("Lifting weights repitition 10 🤺");
+
+// Instead of repeating one thing through out we can use the for loop.
+// The for loop has three parts(the initi)
+// for loop keeps running while condition is true
+for (let rep = 8; rep <= 20; rep++) {
+  console.log(`Lifting weights repitition ${rep} 🤺`);
+}
+
+// HOW THE LOOP WORKS:
+// 1. Initialization (let rep = 1)
+// This runs only once.
+
+// It creates a variable rep and sets it to 1.
+
+// Think of this like "starting from repetition number 1".
+
+// 2. Condition (rep <= 10)
+// This is checked before each loop run.
+
+// If it’s true, the loop runs. If false, it stops.
+
+// At first, rep is 1, so 1 <= 10 → true ✅ → loop runs.
+
+// 3. Increment (rep++)
+// This runs after each loop cycle.
+
+// rep++ increases rep by 1.
+
+// So after the first round, rep becomes 2, then 3, and so on.
