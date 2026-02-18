@@ -143,13 +143,13 @@ if (friends.includes("Steven")) {
 }
 
 // Introduction to Objects
-const jonasArray = [
-  "Jonas",
-  "Schmedtmann",
-  2037 - 1991,
-  "teacher",
-  ["Michael", "Peter", "Steven"],
-];
+// const jonasArray = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
 
 // So just like arrays, object is use to group variables that really belong together, with object order does not matter when you want to retrieve them. So arrays are for structured data whilst objects are unstructured data. For objject you give it a name and u retrieve it by the name. In all the property name is what matters.
 // const jonas = {
@@ -278,11 +278,11 @@ const jonas = {
 //   return 2037 - birthYeah;
 // };
 
-console.log(jonas.calcAge());
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 
 // console.log(jonas["calcAge"](1991));
 
@@ -291,7 +291,7 @@ console.log(jonas.age);
 
 // Eg : "Jonas is a 46- year old teacher, and he has a drivers license.  "
 
-console.log(jonas.getSummary());
+// console.log(jonas.getSummary());
 
 // Now in conclusion, when we analyse arrays from the example below, we can say arrays too  are objects, special kinds of objects, because like this, it uses a built in function(method). And the friends, is object.
 friends.pop();
@@ -340,3 +340,83 @@ for (let rep = 8; rep <= 20; rep++) {
 // rep++ increases rep by 1.
 
 // So after the first round, rep becomes 2, then 3, and so on.
+
+// Looping Arrays: One of the uses of for loop
+// const jona = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+//   "white",
+// ];
+
+// console.log(jonas[0]);
+// console.log(jonas[1]);
+// console.log(jonas[2]);
+// console.log(jonas[3]);
+// console.log(jonas[4]);
+// jonas [5] does NOT exist
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(jona[i]);
+// }
+
+// Now lets compute the 5, so javascript naturally gives to us.
+
+const jona = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  "white",
+];
+
+const types = [];
+
+for (let i = 0; i < jona.length; i++) {
+  console.log(jona[i], typeof jona[i]);
+
+  types[i] = typeof jona[i];
+}
+
+types[0] = "string";
+
+// I THOUGHT BECAUS E IT IN THE SWUARE BRACKET [MICHAEL, PETER. STEVEN] IS AN ARRAY
+// ChatGPT said:
+
+// Yes Nancy, you are absolutely right 💯 — when you write something in square brackets [...], that’s an array.
+
+// But here’s the tricky part 👇
+
+// Arrays are arrays,
+
+// but in JavaScript, arrays are built on top of objects.
+
+// That’s why:
+
+// typeof ["Michael", "Peter", "Steven"]  // "object"
+
+// Even though it’s an array, typeof only knows it as an "object".
+// JavaScript doesn’t have a special "array" type in typeof.
+
+// Think of it like this:
+
+// Dog is an animal 🐕
+
+// If you ask “what is it?” at the most general level → “animal”
+
+// But if you want to know exactly → “dog”
+
+// Same way:
+
+// Array is a special kind of object.
+
+// typeof only tells you the general type ("object").
+
+// To know if it’s really an array, you use:
+
+// IN OTHER WORDS ARRAY IS A TYPE OF OBJECT:Object = the big category (like "animal").
+
+// Array = a special kind of object (like "dog").
