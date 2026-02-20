@@ -14,6 +14,8 @@
 
 // const if = 43
 
+///////////////////////////////
+
 // FUNCTIONS
 // WHtat are functions
 // Is a piece of code we can reuse over and over again. It contains pieces of code in them. Difference between variales and function is that, Variables hold values but functions hold lines of codes.
@@ -74,3 +76,16 @@ console.log(age1, age2);
 
 // WHATS THE BIG DIFFERENCE BETWWEEN FXN DECLARA... AND FXN EXPRESS...
 // You can invoke or call a function before creating it or initializing it, but cant with fxn expression.
+
+// Practicing a function expression
+//write a function expression to calculate sis all the ages of your siblings.
+
+const calcAgeFirstBorn = function (birthYear) {
+  const sisOlivia = 2026 - birthYear;
+  return `sis Olivia is ${sisOlivia} years old `;
+};
+
+const age = calcAgeFirstBorn(1988);
+console.log(age);
+
+////////////////////////////////////
